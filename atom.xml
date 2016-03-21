@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://maxwa.github.io/blog/"/>
-  <updated>2016-03-16T12:08:08.792Z</updated>
+  <updated>2016-03-16T11:13:46.644Z</updated>
   <id>http://maxwa.github.io/blog/</id>
   
   <author>
@@ -14,22 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>testonly</title>
-    <link href="http://maxwa.github.io/blog/2016/03/16/testonly/"/>
-    <id>http://maxwa.github.io/blog/2016/03/16/testonly/</id>
-    <published>2016-03-16T12:08:08.000Z</published>
-    <updated>2016-03-16T12:08:08.792Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
