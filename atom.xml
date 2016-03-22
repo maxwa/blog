@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>草乙甘舌の爸</title>
   <subtitle>随手记录身边的琐碎事</subtitle>
-  <link href="/blog/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="http://maxwa.github.io/blog/"/>
+  <link href="http://www.maxwa.xyz/"/>
   <updated>2016-03-16T11:13:46.644Z</updated>
-  <id>http://maxwa.github.io/blog/</id>
+  <id>http://www.maxwa.xyz/</id>
   
   <author>
     <name>Max CHE</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://maxwa.github.io/blog/2016/03/16/hello-world/"/>
-    <id>http://maxwa.github.io/blog/2016/03/16/hello-world/</id>
+    <link href="http://www.maxwa.xyz/2016/03/16/hello-world/"/>
+    <id>http://www.maxwa.xyz/2016/03/16/hello-world/</id>
     <published>2016-03-16T11:13:46.644Z</published>
     <updated>2016-03-16T11:13:46.644Z</updated>
     
