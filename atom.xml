@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maxwa.xyz/"/>
-  <updated>2016-04-07T12:34:09.832Z</updated>
+  <updated>2016-04-07T12:39:57.424Z</updated>
   <id>http://www.maxwa.xyz/</id>
   
   <author>
@@ -20,15 +20,15 @@
     <link href="http://www.maxwa.xyz/2016/04/07/%E6%9D%82%E8%AE%B0/"/>
     <id>http://www.maxwa.xyz/2016/04/07/杂记/</id>
     <published>2016-04-07T07:55:13.000Z</published>
-    <updated>2016-04-07T12:34:09.832Z</updated>
+    <updated>2016-04-07T12:39:57.424Z</updated>
     
     <content type="html">&lt;blockquote&gt;&lt;p&gt;IP地址设置: /etc/network/interface &lt;/p&gt;
 &lt;p&gt;静态Static获得 &lt;/p&gt;
-&lt;p&gt;启动系统激活设备&lt;br&gt;Loop回环地址&lt;br&gt; auto lo&lt;br&gt; iface lo inet loopback &lt;/p&gt;
-&lt;p&gt;启动系统激活设备&lt;br&gt;网卡eth0设置为Static类型&lt;br&gt; auto eth0&lt;br&gt; iface eth0 inet static &lt;/p&gt;
-&lt;p&gt;指定IP地址、子网掩码、网关&lt;br&gt; address 192.168.0.1&lt;br&gt; netmask 255.255.255.0&lt;br&gt; gateway 192.168.0.1&lt;/p&gt;
+&lt;p&gt;启动系统激活设备&lt;br&gt;Loop回环地址&lt;br&gt;&lt;em&gt;auto lo&lt;/em&gt;&lt;br&gt;&lt;em&gt;iface lo inet loopback&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;启动系统激活设备&lt;br&gt;网卡eth0设置为Static类型&lt;br&gt;&lt;em&gt;auto eth0&lt;/em&gt;&lt;br&gt;&lt;em&gt;iface eth0 inet static&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;指定IP地址、子网掩码、网关&lt;br&gt;&lt;em&gt;address 192.168.0.1&lt;/em&gt;&lt;br&gt;&lt;em&gt;netmask 255.255.255.0&lt;/em&gt;&lt;br&gt;&lt;em&gt;gateway 192.168.0.1&lt;/em&gt;&lt;/p&gt;
 &lt;footer&gt;&lt;strong&gt;zhanyimin&lt;/strong&gt;&lt;cite&gt;&lt;a href=&quot;http://zhanyimin.blog.51cto.com/4187418/1655160&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Debian修改IP、DNS&lt;/a&gt;&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;&lt;p&gt;增加默认路由 route add default gw 192.168.0.1 &lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;增加默认路由&lt;br&gt;&lt;em&gt;route add default gw 192.168.0.1&lt;/em&gt;&lt;/p&gt;
 &lt;footer&gt;&lt;strong&gt;lenglingx&lt;/strong&gt;&lt;cite&gt;&lt;a href=&quot;http://ju.outofmemory.cn/entry/181440&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;linux 添加静态路由&lt;/a&gt;&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
 &lt;p&gt;删除默认路由同理&lt;/p&gt;
 </content>
@@ -37,8 +37,7 @@
     
       &lt;blockquote&gt;&lt;p&gt;IP地址设置: /etc/network/interface &lt;/p&gt;
 &lt;p&gt;静态Static获得 &lt;/p&gt;
-&lt;p&gt;启动系统激活设备&lt;br&gt;Loop回环地址&lt;br&gt; auto lo&lt;br&gt; iface lo inet loopback &lt;/p&gt;
-&lt;p
+&lt;p&gt;启动系统激活设备&lt;br&gt;Loop回环地址&lt;br&gt;&lt;em&gt;auto lo&lt;/em&gt;&lt;br&gt;&lt;em&gt;iface lo inet loopb
     
     </summary>
     
