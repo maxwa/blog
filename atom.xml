@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maxwa.xyz/"/>
-  <updated>2016-04-07T12:39:57.424Z</updated>
+  <updated>2016-04-07T12:42:29.296Z</updated>
   <id>http://www.maxwa.xyz/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Linux设定固定IP及静态路由</title>
-    <link href="http://www.maxwa.xyz/2016/04/07/%E6%9D%82%E8%AE%B0/"/>
-    <id>http://www.maxwa.xyz/2016/04/07/杂记/</id>
+    <title>Debian设定固定IP及静态路由</title>
+    <link href="http://www.maxwa.xyz/2016/04/07/Debian%E8%AE%BE%E5%AE%9A%E5%9B%BA%E5%AE%9AIP%E5%8F%8A%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/"/>
+    <id>http://www.maxwa.xyz/2016/04/07/Debian设定固定IP及静态路由/</id>
     <published>2016-04-07T07:55:13.000Z</published>
-    <updated>2016-04-07T12:39:57.424Z</updated>
+    <updated>2016-04-07T12:42:29.296Z</updated>
     
     <content type="html">&lt;blockquote&gt;&lt;p&gt;IP地址设置: /etc/network/interface &lt;/p&gt;
 &lt;p&gt;静态Static获得 &lt;/p&gt;
