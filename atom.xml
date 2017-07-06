@@ -43,6 +43,28 @@
   </entry>
   
   <entry>
+    <title>TEST ONLY</title>
+    <link href="http://www.maxwa.xyz/2017/07/06/Test/"/>
+    <id>http://www.maxwa.xyz/2017/07/06/Test/</id>
+    <published>2017-07-05T16:00:00.000Z</published>
+    <updated>2017-07-06T02:47:47.088Z</updated>
+    
+    <content type="html">&lt;p&gt;This is a test blog…&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This is a test blog…&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="Hexo TEST" scheme="http://www.maxwa.xyz/tags/Hexo-TEST/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Debian设定固定IP及静态路由</title>
     <link href="http://www.maxwa.xyz/2016/04/07/Debian%E8%AE%BE%E5%AE%9A%E5%9B%BA%E5%AE%9AIP%E5%8F%8A%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/"/>
     <id>http://www.maxwa.xyz/2016/04/07/Debian设定固定IP及静态路由/</id>
