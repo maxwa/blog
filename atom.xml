@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maxwa.xyz/"/>
-  <updated>2017-07-08T08:37:30.736Z</updated>
+  <updated>2017-07-08T08:40:39.784Z</updated>
   <id>http://www.maxwa.xyz/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>TIPTOP p_query中如何设定权限</title>
     <link href="http://www.maxwa.xyz/2017/07/08/tiptop-p_query-auth-settings-use-sql/"/>
     <id>http://www.maxwa.xyz/2017/07/08/tiptop-p_query-auth-settings-use-sql/</id>
-    <published>2017-07-08T08:37:30.736Z</published>
-    <updated>2017-07-08T08:37:30.736Z</updated>
+    <published>2017-07-08T08:40:39.784Z</published>
+    <updated>2017-07-08T08:40:39.784Z</updated>
     
     <content type="html">&lt;p&gt;Q: p_query中如何设定权限，以限制不同部门或不同User？&lt;/p&gt;
 &lt;p&gt;A: SQL语句编写时注意不要使用&lt;/p&gt;
@@ -34,14 +34,10 @@
 &lt;p&gt;这时候再去「权限设置」页签看，就能选到&lt;em&gt;所有者&lt;/em&gt;和&lt;em&gt;群组&lt;/em&gt;字段了。&lt;/p&gt;
 &lt;p&gt;如果是需要左连接（LEFT JOIN）或右连接（RIGHT JOIN）呢，也可以把连接字段写到WHERE子句中，要左连接，就在右表的字段后加上&lt;strong&gt;(+)&lt;/strong&gt;，反之亦然。有多个字段要连接的话，可以用多个加号喔。&lt;/p&gt;
 &lt;p&gt;附上最近做的真实案例，「部门请购转采购明细表」之SQL，请指教。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;SELECT pmk13,gen02,pmk04,pmk01,pml02,pml04,pml041,pml07,pml20,pml21,pml16,pmn20,pmn20*pmn31,pmn20*pmn31t
-  FROM pmk_file,pml_file,gen_file,pmn_file,pmm_file
- WHERE pmk01=pml01
-     AND pmk12=gen01(+)
-     AND pml01=pmn24(+) AND pml02=pmn25(+) AND pmn20(+) &amp;gt; 0
-     AND pmn01=pmm01(+) AND pmm18(+) &amp;lt;&amp;gt; &amp;apos;X&amp;apos;
-     AND pmk18 &amp;lt;&amp;gt; &amp;apos;X&amp;apos;
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;blockquote&gt;
+&lt;p&gt;SELECT pmk13,gen02,pmk04,pmk01,pml02,pml04,pml041,pml07,pml20,pml21,pml16,pmn20,pmn20&lt;em&gt;pmn31,pmn20&lt;/em&gt;pmn31t&lt;br&gt;  FROM pmk_file,pml_file,gen_file,pmn_file,pmm_file&lt;br&gt; WHERE pmk01=pml01&lt;br&gt;   AND pmk12=gen01(+)&lt;br&gt;   AND pml01=pmn24(+) AND pml02=pmn25(+) AND pmn20(+) &amp;gt; 0&lt;br&gt;   AND pmn01=pmm01(+) AND pmm18(+) &amp;lt;&amp;gt; ‘X’&lt;br&gt;   AND pmk18 &amp;lt;&amp;gt; ‘X’&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
     
     <summary type="html">
     
