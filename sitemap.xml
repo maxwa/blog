@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.maxwa.xyz/about/index.html</loc>
+    
+    <lastmod>2017-07-11T02:58:39.336Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.maxwa.xyz/2017/07/11/what-does-pipe-number-mean-in-ping-output/</loc>
     
     <lastmod>2017-07-11T02:08:09.244Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://www.maxwa.xyz/2017/07/06/Test/</loc>
     
     <lastmod>2017-07-08T08:36:44.824Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.maxwa.xyz/about/index.html</loc>
-    
-    <lastmod>2017-07-08T05:58:55.980Z</lastmod>
     
   </url>
   
