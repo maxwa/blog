@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maxwa.xyz/"/>
-  <updated>2017-07-08T08:44:05.056Z</updated>
+  <updated>2017-07-11T02:06:26.488Z</updated>
   <id>http://www.maxwa.xyz/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ping命令执行结果中“pipe x”的含义</title>
+    <link href="http://www.maxwa.xyz/2017/07/11/what-does-pipe-number-mean-in-ping-output/"/>
+    <id>http://www.maxwa.xyz/2017/07/11/what-does-pipe-number-mean-in-ping-output/</id>
+    <published>2017-07-11T02:06:26.488Z</published>
+    <updated>2017-07-11T02:06:26.488Z</updated>
+    
+    <content type="html">&lt;p&gt;有时在Linux下用&lt;em&gt;ping&lt;/em&gt;来测试网络时，会遇到报告中有&lt;em&gt;pipe&lt;/em&gt;值的内容，如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;— 192.168.0.86 ping statistics —&lt;br&gt;100 packets transmitted, 100 received, 0% packet loss, time 99049ms&lt;br&gt;rtt min/avg/max/mdev = 1.229/478.632/8391.558/1457.775 ms, &lt;strong&gt;pipe&lt;/strong&gt; 9&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;原来这个&lt;em&gt;pipe&lt;/em&gt;值，表示的是&lt;em&gt;ping&lt;/em&gt;过程中某一时刻网络中为应答的ICMP回显请求报文的最大数。当这个值等于1时，表示每个请求在下一个请求被发送之前收到一个响应，故不会被显示在报告中。&lt;/p&gt;
+&lt;p&gt;默认情况下，ping命令在发送回应请求之间等待一秒，请参考其man手册的-i参数下的描述：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;The default is to wait for one second between each packet normally, or not to wait in flood mode. Only super-user may set interval to values less 0.2 seconds.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在大多数网络中，&lt;em&gt;ping&lt;/em&gt;的往返时间（RTT）通常在数十或数百毫秒的数量级，而不是秒数，所以在此默认模式下，每个回显请求通常会在发送以下请求之前收到一个响应。网络中出现的最大数据包数量在测试中的任何一点都不大于1，因此&lt;em&gt;pipe&lt;/em&gt;数量等于1而未报告。&lt;/p&gt;
+&lt;p&gt;由于某种原因，如果数据包的响应时间超过此默认间隔，导致网络中出现多个请求，则&lt;em&gt;ping&lt;/em&gt;将报告一个以上的&lt;em&gt;pipe&lt;/em&gt;。 类似地，您可以通过传递比&lt;em&gt;ping&lt;/em&gt;的&lt;em&gt;-i&lt;/em&gt;参数的RTT更小的值来人为地减少间隔来调用此响应，以显示在报告中。&lt;/p&gt;
+&lt;p&gt;如果你在本地局域网中&lt;em&gt;ping&lt;/em&gt;遇到了这种情况，多半是网络硬件问题啦。&lt;/p&gt;
+&lt;p&gt;参考链接：&lt;a href=&quot;https://serverfault.com/a/587735&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://serverfault.com/a/587735&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;有时在Linux下用&lt;em&gt;ping&lt;/em&gt;来测试网络时，会遇到报告中有&lt;em&gt;pipe&lt;/em&gt;值的内容，如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;— 192.168.0.86 ping statistics —&lt;br&gt;100 packets transmitte
+    
+    </summary>
+    
+    
+      <category term="ping" scheme="http://www.maxwa.xyz/tags/ping/"/>
+    
+      <category term="pipe" scheme="http://www.maxwa.xyz/tags/pipe/"/>
+    
+      <category term="linux" scheme="http://www.maxwa.xyz/tags/linux/"/>
+    
+      <category term="network" scheme="http://www.maxwa.xyz/tags/network/"/>
+    
+  </entry>
   
   <entry>
     <title>TIPTOP p_query中如何设定权限</title>
