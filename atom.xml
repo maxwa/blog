@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maxwa.xyz/"/>
-  <updated>2017-07-12T08:07:33.544Z</updated>
+  <updated>2017-07-12T08:12:46.060Z</updated>
   <id>http://www.maxwa.xyz/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://www.maxwa.xyz/2017/07/12/cisco-vpn-config-asa-remote-access-prompt-user-change-password/"/>
     <id>http://www.maxwa.xyz/2017/07/12/cisco-vpn-config-asa-remote-access-prompt-user-change-password/</id>
     <published>2017-07-12T08:04:41.000Z</published>
-    <updated>2017-07-12T08:07:33.544Z</updated>
+    <updated>2017-07-12T08:12:46.060Z</updated>
     
     <content type="html">&lt;p&gt;鉴于资讯安全的考量，Cisco 防火墙（Software: ASA） 建立VPN帐号提供给外协厂商用于远程协助，使用完毕后需要将帐号关闭或改掉密码，避免未经许可的远程登录。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://home.bt.com/images/password-136401375554302601&quot; alt=&quot;Change your password...&quot;&gt;&lt;/p&gt;
 &lt;p&gt;下面两个链接用于参考如何实现该功能。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.cisco.com/c/zh_cn/support/docs/network-management/remote-access/116757-config-asa-remote-00.html&quot; title=&quot;Cisco官网配置示例&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Cisco官网配置示例&lt;/a&gt;&lt;/li&gt;
@@ -33,9 +34,7 @@
     <summary type="html">
     
       &lt;p&gt;鉴于资讯安全的考量，Cisco 防火墙（Software: ASA） 建立VPN帐号提供给外协厂商用于远程协助，使用完毕后需要将帐号关闭或改掉密码，避免未经许可的远程登录。&lt;/p&gt;
-&lt;p&gt;下面两个链接用于参考如何实现该功能。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;ht
+&lt;p&gt;&lt;img src=&quot;http://home.bt.com/images/passwor
     
     </summary>
     
