@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maxwa.xyz/"/>
-  <updated>2017-07-13T10:44:42.296Z</updated>
+  <updated>2017-07-14T00:13:43.788Z</updated>
   <id>http://www.maxwa.xyz/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《只有偏执狂才能生存》读书笔记</title>
+    <link href="http://www.maxwa.xyz/2017/07/14/reading-notes-%E5%8F%AA%E6%9C%89%E5%81%8F%E6%89%A7%E7%8B%82%E6%89%8D%E8%83%BD%E7%94%9F%E5%AD%98/"/>
+    <id>http://www.maxwa.xyz/2017/07/14/reading-notes-只有偏执狂才能生存/</id>
+    <published>2017-07-14T00:07:40.000Z</published>
+    <updated>2017-07-14T00:13:43.788Z</updated>
+    
+    <content type="html">&lt;p&gt;从企业高层的角度看「空降兵」，有些事情就不能理解了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“空降兵”未必比原来的领导精明能干。他们只有一点优势，但却至关重要：和那些一生为公司效力、对公司的点点滴滴都牵肠挂肚的人相比，这些新经理不存在情感上的难题，因而更能不偏不倚地做出决策。真乃当局者迷，旁观者清。“空降兵”未必比原来的领导精明能干。他们只有一点优势，但却至关重要：和那些一生为公司效力、对公司的点点滴滴都牵肠挂肚的人相比，这些新经理不存在情感上的难题，因而更能不偏不倚地做出决策。真乃当局者迷，旁观者清。&lt;/p&gt;
+&lt;p&gt;在企业经历剧变时，现有的管理者要想坐稳交椅，就必须从旁观者的角度来客观地看待形势。他们必须挣脱情感的羁绊，走过战略转折点。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从企业高层的角度看「空降兵」，有些事情就不能理解了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“空降兵”未必比原来的领导精明能干。他们只有一点优势，但却至关重要：和那些一生为公司效力、对公司的点点滴滴都牵肠挂肚的人相比，这些新经理不存在情感上的难题，因而更能不偏不倚地做出决
+    
+    </summary>
+    
+    
+      <category term="book" scheme="http://www.maxwa.xyz/tags/book/"/>
+    
+  </entry>
   
   <entry>
     <title>TIPTOP p_query中如何设定权限</title>
