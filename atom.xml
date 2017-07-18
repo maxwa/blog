@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maxwa.xyz/"/>
-  <updated>2017-07-14T00:13:43.788Z</updated>
+  <updated>2017-07-18T00:49:34.380Z</updated>
   <id>http://www.maxwa.xyz/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>下班途中的风景</title>
+    <link href="http://www.maxwa.xyz/2017/07/17/on-the-road/"/>
+    <id>http://www.maxwa.xyz/2017/07/17/on-the-road/</id>
+    <published>2017-07-17T11:09:28.000Z</published>
+    <updated>2017-07-18T00:49:34.380Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;../../images/IMG_20170717_190928.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;../../images/IMG_20170717_190928.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="picture" scheme="http://www.maxwa.xyz/tags/picture/"/>
+    
+  </entry>
   
   <entry>
     <title>《只有偏执狂才能生存》读书笔记</title>
