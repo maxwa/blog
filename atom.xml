@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maxwa.xyz/"/>
-  <updated>2017-07-21T01:12:19.136Z</updated>
+  <updated>2017-07-21T10:19:55.524Z</updated>
   <id>http://www.maxwa.xyz/</id>
   
   <author>
@@ -14,6 +14,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在p_query中使用复杂的sql语句</title>
+    <link href="http://www.maxwa.xyz/2017/07/21/how-to-use-complex-sql-statements-in-tiptop-p-query/"/>
+    <id>http://www.maxwa.xyz/2017/07/21/how-to-use-complex-sql-statements-in-tiptop-p-query/</id>
+    <published>2017-07-21T10:18:55.000Z</published>
+    <updated>2017-07-21T10:19:55.524Z</updated>
+    
+    <content type="html">&lt;p&gt;p_query 是 Tiptop GP5.0 以上系统提供的简单报表制作工具，只要通过 SQL 就能写出简单的报表内容。&lt;/p&gt;
+&lt;p&gt;p_query 对稍微复杂点 SQL 的支持度还是不够理想，比如有 MAX，MIN，UNION 等关键字时，就无法正确解析出来。&lt;/p&gt;
+&lt;p&gt;其实还是有办法的： 将一个复杂的 SQL 在数据库中建成 VIEW ，然后在 p_query 中直接从该 view 中查出数据出来就可以了。&lt;/p&gt;
+&lt;p&gt;下面讲一个例子：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;SELECT DISTINCT ogb31,ogb32,MAX(oga02) oga02&lt;br&gt;FROM ogb_file,oga_file&lt;br&gt;WHERE ogb01=oga01 AND oga08&amp;lt;&amp;gt;1 AND oga09 in (‘2’,’3’,’4’,’6’)&lt;br&gt;GROUP BY ogb31,ogb32&lt;br&gt;ORDER BY ogb31,ogb32&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上面这段 SQL 是要找出订单的最晚出货时间。&lt;br&gt;如果直接在 p_query 里面写这样的 SQL，max(oga02)那个会有解析的问题，而且 p_query 画面上也无法下查询条件。&lt;br&gt;如果把上面这段 SQL 写成 view 就很好的解决这个问题了：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CREATE OR REPLACE VIEW delivery_date AS&lt;br&gt;SELECT DISTINCT ogb31,ogb32,MAX(oga02) oga02&lt;br&gt;FROM ogb_file,oga_file&lt;br&gt;WHERE ogb01=oga01 AND oga08&amp;lt;&amp;gt;1 AND oga09 in (‘2’,’3’,’4’,’6’)&lt;br&gt;GROUP BY ogb31,ogb32&lt;br&gt;ORDER BY ogb31,ogb32;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然后直接在 p_query 里面写 ：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;SELECT * FROM delivery_date&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;可以起到一样的查询效果，而不会有任何问题。&lt;/p&gt;
+&lt;p&gt;【注意】 VIEW 需要在每个营运中心对应的数据库中都建一下，否则会导致没有建该 VIEW的营运中心执行此报表失败。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;p_query 是 Tiptop GP5.0 以上系统提供的简单报表制作工具，只要通过 SQL 就能写出简单的报表内容。&lt;/p&gt;
+&lt;p&gt;p_query 对稍微复杂点 SQL 的支持度还是不够理想，比如有 MAX，MIN，UNION 等关键字时，就无法正确解析出来。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="tiptop" scheme="http://www.maxwa.xyz/tags/tiptop/"/>
+    
+      <category term="sql" scheme="http://www.maxwa.xyz/tags/sql/"/>
+    
+  </entry>
   
   <entry>
     <title>4gl中如何调用Oracle存储过程</title>
