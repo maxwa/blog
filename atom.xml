@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maxwa.xyz/"/>
-  <updated>2017-07-18T00:56:06.340Z</updated>
+  <updated>2017-07-21T01:12:19.136Z</updated>
   <id>http://www.maxwa.xyz/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4gl中如何调用Oracle存储过程</title>
+    <link href="http://www.maxwa.xyz/2017/07/21/how-to-call-stored-procedures-in-4gl/"/>
+    <id>http://www.maxwa.xyz/2017/07/21/how-to-call-stored-procedures-in-4gl/</id>
+    <published>2017-07-21T01:02:53.000Z</published>
+    <updated>2017-07-21T01:12:19.136Z</updated>
+    
+    <content type="html">&lt;p&gt;请参考&lt;a href=&quot;http://blog.csdn.net/bason/article/details/5388592&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/bason/article/details/5388592&lt;/a&gt;&lt;br&gt;或BDL语言的用户手册截图如下：&lt;br&gt;&lt;img src=&quot;/images/screenshot_fjs-fgl-2.11.01-manual_pdf_page492.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;请参考&lt;a href=&quot;http://blog.csdn.net/bason/article/details/5388592&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/bason/article/details
+    
+    </summary>
+    
+    
+      <category term="oracle" scheme="http://www.maxwa.xyz/tags/oracle/"/>
+    
+      <category term="tiptop" scheme="http://www.maxwa.xyz/tags/tiptop/"/>
+    
+  </entry>
   
   <entry>
     <title>下班途中的风景</title>
