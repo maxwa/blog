@@ -73,9 +73,9 @@
     </summary>
     
     
-      <category term="oracle" scheme="http://www.maxwa.xyz/tags/oracle/"/>
-    
       <category term="tiptop" scheme="http://www.maxwa.xyz/tags/tiptop/"/>
+    
+      <category term="oracle" scheme="http://www.maxwa.xyz/tags/oracle/"/>
     
   </entry>
   
@@ -257,11 +257,11 @@
     </summary>
     
     
-      <category term="Linux" scheme="http://www.maxwa.xyz/tags/Linux/"/>
-    
       <category term="ping" scheme="http://www.maxwa.xyz/tags/ping/"/>
     
       <category term="pipe" scheme="http://www.maxwa.xyz/tags/pipe/"/>
+    
+      <category term="Linux" scheme="http://www.maxwa.xyz/tags/Linux/"/>
     
       <category term="network" scheme="http://www.maxwa.xyz/tags/network/"/>
     
