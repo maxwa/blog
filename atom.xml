@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maxwa.xyz/"/>
-  <updated>2017-07-21T10:19:55.524Z</updated>
+  <updated>2017-07-28T09:30:31.396Z</updated>
   <id>http://www.maxwa.xyz/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>空椅子</title>
+    <link href="http://www.maxwa.xyz/2017/07/28/Nobel-peace-prize-placed-on-empty-chair/"/>
+    <id>http://www.maxwa.xyz/2017/07/28/Nobel-peace-prize-placed-on-empty-chair/</id>
+    <published>2017-07-28T09:28:44.000Z</published>
+    <updated>2017-07-28T09:30:31.396Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/IMG_20170727_210928.jpg&quot; alt=&quot;空椅子&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/IMG_20170727_210928.jpg&quot; alt=&quot;空椅子&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="picture" scheme="http://www.maxwa.xyz/tags/picture/"/>
+    
+  </entry>
   
   <entry>
     <title>如何在p_query中使用复杂的sql语句</title>
@@ -73,9 +95,9 @@
     </summary>
     
     
-      <category term="tiptop" scheme="http://www.maxwa.xyz/tags/tiptop/"/>
-    
       <category term="oracle" scheme="http://www.maxwa.xyz/tags/oracle/"/>
+    
+      <category term="tiptop" scheme="http://www.maxwa.xyz/tags/tiptop/"/>
     
   </entry>
   
@@ -257,11 +279,11 @@
     </summary>
     
     
+      <category term="Linux" scheme="http://www.maxwa.xyz/tags/Linux/"/>
+    
       <category term="ping" scheme="http://www.maxwa.xyz/tags/ping/"/>
     
       <category term="pipe" scheme="http://www.maxwa.xyz/tags/pipe/"/>
-    
-      <category term="Linux" scheme="http://www.maxwa.xyz/tags/Linux/"/>
     
       <category term="network" scheme="http://www.maxwa.xyz/tags/network/"/>
     
