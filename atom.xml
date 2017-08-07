@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maxwa.xyz/"/>
-  <updated>2017-07-28T09:30:31.396Z</updated>
+  <updated>2017-08-07T10:49:04.360Z</updated>
   <id>http://www.maxwa.xyz/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在tiptop终端增加别名命令</title>
+    <link href="http://www.maxwa.xyz/2017/08/07/how-to-add-alias-command-in-tiptop-terminal/"/>
+    <id>http://www.maxwa.xyz/2017/08/07/how-to-add-alias-command-in-tiptop-terminal/</id>
+    <published>2017-08-07T10:24:37.000Z</published>
+    <updated>2017-08-07T10:49:04.360Z</updated>
+    
+    <content type="html">&lt;p&gt;Tiptop ERP的服务器操作系统是RHEL，GP5.x版本的OS大概都是5.4 (Tikanga)，它默认使用了&lt;a href=&quot;https://zh.wikipedia.org/wiki/Korn_shell&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ksh&lt;/a&gt;这个SHELL，某些组件的配置文件被鼎新（鼎捷）做过个性化的修改，如命令、文件和目录名不能按Tab键自动补全；历史命令查找，需要先按ESC键，进入VIM模式，再按VIM的方式来编辑历史命令等。&lt;/p&gt;
+&lt;p&gt;虽然ksh完全向上兼容bash，但还是有些不同的，比如今天我们要说的alias（别名）。我用它的主要目的是给mv/cp/rm这些命令加上 -i 参数，这样在执行命令时就会有提示，避免误操作。如果只是用一次，可直接输入alias加参数搞定；可要永久生效，就需要改配置文件，bash的这个参数文件是&lt;strong&gt;~/.bashrc&lt;/strong&gt;，但ksh的，需要以root用户在&lt;strong&gt;/etc/profile.d&lt;/strong&gt;中新增一个可执行脚本。我的如下，请参考。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;   # confirm when execute the mv/cp/rm command&lt;/p&gt;
+&lt;p&gt;alias mv=’mv -i’ 2&amp;gt;/dev/null&lt;br&gt;alias cp=’cp -i’ 2&amp;gt;/dev/null&lt;br&gt;alias rm=’rm -i’ 2&amp;gt;/dev/null&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;完成后再给该文件赋予755权限，从root环境退出，重开Terminal就OK了。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Tiptop ERP的服务器操作系统是RHEL，GP5.x版本的OS大概都是5.4 (Tikanga)，它默认使用了&lt;a href=&quot;https://zh.wikipedia.org/wiki/Korn_shell&quot; target=&quot;_blank&quot; rel=&quot;externa
+    
+    </summary>
+    
+    
+      <category term="tiptop" scheme="http://www.maxwa.xyz/tags/tiptop/"/>
+    
+      <category term="linux" scheme="http://www.maxwa.xyz/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>空椅子</title>
