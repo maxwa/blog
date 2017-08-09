@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.maxwa.xyz/"/>
-  <updated>2017-08-07T10:49:04.360Z</updated>
+  <updated>2017-08-09T00:37:45.528Z</updated>
   <id>http://www.maxwa.xyz/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Oracle中批量跨表更新数据</title>
+    <link href="http://www.maxwa.xyz/2017/08/08/UPDATE-with-JOIN-syntax-for-Oracle-Database/"/>
+    <id>http://www.maxwa.xyz/2017/08/08/UPDATE-with-JOIN-syntax-for-Oracle-Database/</id>
+    <published>2017-08-08T10:35:17.000Z</published>
+    <updated>2017-08-09T00:37:45.528Z</updated>
+    
+    <content type="html">&lt;p&gt;这两天发现，之前的同事对sapmt540_sub进行客制时，将pmn44（本币单价）的计算公式写错了，本应是pmn31（原币单价）×pmm42（汇率）的，误将pmm42写成了pmm43（税率），导致pmn44都错了。&lt;/p&gt;
+&lt;p&gt;找到问题、修改程序后，还需要更新历史数据。下面是本次批量更新的SQL语句。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;UPDATE (&lt;br&gt;SELECT pmn01,pmn02,pmn31,ROUND(pmn31*pmm42,6) pmm44_new&lt;br&gt;FROM pmn_file, pmm_file&lt;br&gt;WHERE pmn01=pmm01&lt;br&gt;AND pmn44&amp;lt;&amp;gt;pmn31&lt;br&gt;)&lt;br&gt;SET pmn44 = pmm44_new;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;之前都是把有问题的记录SELECT并export到Excel，再用公式逐行写好UPDATE语句，逐行更新的。这次是直接跨表查询出需更新的记录并一次更新的。两种方式各有优劣，前者可以保存更新前的数据和更新时的SQL语句，后者则更快捷。&lt;/p&gt;
+&lt;p&gt;更多UPDATE的语法请参考Oracle官网的&lt;a href=&quot;http://docs.oracle.com/cd/B19306_01/server.102/b14200/statements_10007.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Database SQL Reference&lt;/a&gt;。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这两天发现，之前的同事对sapmt540_sub进行客制时，将pmn44（本币单价）的计算公式写错了，本应是pmn31（原币单价）×pmm42（汇率）的，误将pmm42写成了pmm43（税率），导致pmn44都错了。&lt;/p&gt;
+&lt;p&gt;找到问题、修改程序后，还需要更新历史数据。
+    
+    </summary>
+    
+    
+      <category term="tiptop" scheme="http://www.maxwa.xyz/tags/tiptop/"/>
+    
+      <category term="sql" scheme="http://www.maxwa.xyz/tags/sql/"/>
+    
+  </entry>
   
   <entry>
     <title>如何在tiptop终端增加别名命令</title>
@@ -124,9 +154,9 @@
     </summary>
     
     
-      <category term="oracle" scheme="http://www.maxwa.xyz/tags/oracle/"/>
-    
       <category term="tiptop" scheme="http://www.maxwa.xyz/tags/tiptop/"/>
+    
+      <category term="oracle" scheme="http://www.maxwa.xyz/tags/oracle/"/>
     
   </entry>
   
