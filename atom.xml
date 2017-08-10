@@ -477,4 +477,40 @@
     
   </entry>
   
+  <entry>
+    <title>TIPTOP GP5.x 复制产生新的CR报表程序时数据源更新的问题</title>
+    <link href="http://www.maxwa.xyz/2012/12/10/change-data-source-for-crystal-report/"/>
+    <id>http://www.maxwa.xyz/2012/12/10/change-data-source-for-crystal-report/</id>
+    <published>2012-12-10T07:43:06.000Z</published>
+    <updated>2017-08-10T07:45:25.260Z</updated>
+    
+    <content type="html">&lt;p&gt;TIPTOP的二次开发者也许会遇到复制产生CR报表后, 所有字段要重新拖放的问题, 本文以axmr660为例, 向您介绍如何快速复制产生CR报表.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;复制CR主机上axmr660目录, 在topcust的相应系统文件夹下粘贴, 更名为cxmr660;&lt;/li&gt;
+&lt;li&gt;将cxmr660文件夹下的axmr660.xml更名为cxmr660.xml, 用记事本等工具打开, 修改&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;xs:element&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;axmr660&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;为&lt;br&gt;&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;xs:element&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;cxmr660&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开CR报表开发工具, 选择[数据库]-&amp;gt;[设置数据源位置], 在[替换为]区域选择[创建新连接]-&amp;gt;[ADO.NET (XML)], 新窗口中找到数据源cxmr660.xml;&lt;/li&gt;
+&lt;li&gt;再点击右侧[更新]按钮即可.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;当然rpt文件也别忘记改名了.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;TIPTOP的二次开发者也许会遇到复制产生CR报表后, 所有字段要重新拖放的问题, 本文以axmr660为例, 向您介绍如何快速复制产生CR报表.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;复制CR主机上axmr660目录, 在topcust的相应系统文件夹下粘贴, 更名为cxmr660;
+    
+    </summary>
+    
+    
+      <category term="tiptop" scheme="http://www.maxwa.xyz/tags/tiptop/"/>
+    
+      <category term="crystal report" scheme="http://www.maxwa.xyz/tags/crystal-report/"/>
+    
+  </entry>
+  
 </feed>
