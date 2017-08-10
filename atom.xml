@@ -452,4 +452,29 @@
     
   </entry>
   
+  <entry>
+    <title>Genero Studio导入数据库sch失败的处理办法</title>
+    <link href="http://www.maxwa.xyz/2016/03/10/Genero-Studio-import-sch-file/"/>
+    <id>http://www.maxwa.xyz/2016/03/10/Genero-Studio-import-sch-file/</id>
+    <published>2016-03-10T04:00:49.000Z</published>
+    <updated>2017-08-10T04:03:33.520Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;strong&gt;环境&lt;/strong&gt;：Genero Studio 2.32.24 build-101641 w64vc90&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;错误提示&lt;/strong&gt;：mod-db3[11003]，”Error importing schema file:”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;处理办法&lt;/strong&gt;：在Genero Studio打开Tools -&amp;gt; Preferences，在General页面，将「Text Encoding」的设定改为GB2312，再导入sch文件即可。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参考资料&lt;/strong&gt;：&lt;a href=&quot;http://www.4js.com/en/support/issue/?id=16186&amp;amp;pass=true&amp;amp;product=GST&amp;amp;fixed_in=2.30-2.32&quot; title=&quot;官网支持文档&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网支持文档&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;环境&lt;/strong&gt;：Genero Studio 2.32.24 build-101641 w64vc90&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;错误提示&lt;/strong&gt;：mod-db3[11003]，”Error importing schema file:”
+    
+    </summary>
+    
+    
+      <category term="tiptop" scheme="http://www.maxwa.xyz/tags/tiptop/"/>
+    
+  </entry>
+  
 </feed>
